@@ -7,10 +7,12 @@ import chap09.app.施設区分._
 import chap09.app.設備区分._
 
 case class App20090505 extends 施設利用申請書 {
+  //implicit conversionにより自動的に整数値から文字列に変換されてインスタンス変数「会員番号」に格納される
   会員番号 = 123456
   名前 = "Scala太郎"
   理由(<div>Scalaの勉強会を行うため。</div>)
   理由("Liftも少し取り上げるかもしれません。")
+  理由(<div><strong>Play2は必ず！！</strong></div>)
 
   申請 {
     施設(20090601, 1300, 1400, 講堂) 理由は <div>初日は講堂で講演したいから</div>

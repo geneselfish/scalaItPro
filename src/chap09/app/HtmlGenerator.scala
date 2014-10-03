@@ -10,6 +10,7 @@ class HtmlGenerator(val app: 施設利用申請書) {
     val html =
 <html>
 <head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
 <title>施設利用申請</title>
 </head>
 <body>

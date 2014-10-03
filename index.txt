@@ -1,1 +1,13 @@
+刺激を求める技術者に捧げるScala講座
 http://itpro.nikkeibp.co.jp/article/COLUMN/20080613/308019/?ST=develop
+
+
+第10回 Scala DSL事始め（後編） （4/5）
+　8 Enumeration
+　　Scalaには列挙型はありませんが，scala.Enumerationを用いて列挙型的に使用できるオブジェクトを
+　　定義することができます。
+    chap09.app.{施設区分, 設備区分}
+　9.1 XMLリテラル
+　　ScalaのXMLリテラルでは，「{」「}」に囲まれた部分をScalaの式として評価し，
+　　その結果をXMLリテラに接木する機能を持っています。
+　　chap09.app.HtmlGenerator 等

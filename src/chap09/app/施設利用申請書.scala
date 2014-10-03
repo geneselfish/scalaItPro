@@ -77,6 +77,13 @@ class 施設利用申請書 {
     df.parse(string)
   }
 
+  /**
+   * implicit conversion
+   * String型のデータが必要な所にInt型のデータがきたら自動的に呼ばれる関数
+   */
   implicit def intToString(value: Int): String = value.toString
+  /**
+   * scala.xml.Node型のデータが必要な所にString型のデータがきたら自動的に呼ばれる関数
+   */
   implicit def stringToNode(value: String): Node = <div>{value}</div>
 }
