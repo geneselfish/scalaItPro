@@ -25,17 +25,28 @@ class 施設利用申請書 {
   }
 
   def 同時利用(candidate: => Unit): SetCandidate = {
-    val child = new SetCandidate()
-    current.addChild(child)
-    current = child
-    candidate
-    current = child.parent
-    child
+    dojiriyo(new SetCandidate(), candidate)
+//    val child = new SetCandidate()
+//    current.addChild(child)
+//    current = child
+//    candidate
+//    current = child.parent
+//    child
   }
 
   def 同時利用(date: String, startTime: String, endTime: String)
                (candidate: => Unit): SetCandidate = {
-    val child = new SetCandidate(to_date(date), to_time(startTime), to_time(endTime))
+    dojiriyo(new SetCandidate(to_date(date), to_time(startTime), to_time(endTime)),
+        candidate)
+//    val child = new SetCandidate(to_date(date), to_time(startTime), to_time(endTime))
+//    current.addChild(child)
+//    current = child
+//    candidate
+//    current = child.parent
+//    child
+  }
+  
+  private def dojiriyo(child: SetCandidate, candidate: => Unit): SetCandidate = {
     current.addChild(child)
     current = child
     candidate

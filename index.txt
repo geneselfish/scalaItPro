@@ -6,8 +6,30 @@ http://itpro.nikkeibp.co.jp/article/COLUMN/20080613/308019/?ST=develop
 　8 Enumeration
 　　Scalaには列挙型はありませんが，scala.Enumerationを用いて列挙型的に使用できるオブジェクトを
 　　定義することができます。
-    chap09.app.{施設区分, 設備区分}
+    例 chap09.app.{施設区分, 設備区分}
 　9.1 XMLリテラル
 　　ScalaのXMLリテラルでは，「{」「}」に囲まれた部分をScalaの式として評価し，
 　　その結果をXMLリテラに接木する機能を持っています。
-　　chap09.app.HtmlGenerator 等
+　　例 chap09.app.HtmlGenerator 等
+
+第11回 Scalaプログラミングの勘所(1) （2/3）
+  2 文字列
+  2.1 formatメソッド
+  2.2 生文字列リテラル """～"""
+  2.3.1 正規表現と生文字列リテラル
+    例　chap11.Sect02
+  2.3.2 rメソッド
+  2.3.3 extractor
+    例　chap11.Sect02_3
+    
+第12回 Scalaプログラミングの勘所(2)
+  3.4.1 あらかじめ値がわかっているSetの生成
+  　　　　ListからSetを得る定石
+  3.4.2 Setの参照
+  3.4.3 Setの追加と削除
+  　例　chap12.Sect03
+  3.4.4 あらかじめ値がわかっているMapの生成
+         ListからMapを得る定石
+  　例　chap12.Sect03_4_4
+  
+  
