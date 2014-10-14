@@ -9,7 +9,7 @@ http://itpro.nikkeibp.co.jp/article/COLUMN/20080613/308019/?ST=develop
     例 chap09.app.{施設区分, 設備区分}
 　9.1 XMLリテラル
 　　ScalaのXMLリテラルでは，「{」「}」に囲まれた部分をScalaの式として評価し，
-　　その結果をXMLリテラに接木する機能を持っています。
+　　その結果をXMLリテラルに接木する機能を持っています。
 　　例 chap09.app.HtmlGenerator 等
 
 第11回 Scalaプログラミングの勘所(1) （2/3）
@@ -30,6 +30,12 @@ http://itpro.nikkeibp.co.jp/article/COLUMN/20080613/308019/?ST=develop
   　例　chap12.Sect03
   3.4.4 あらかじめ値がわかっているMapの生成
          ListからMapを得る定石
+  3.4.5 Mapの参照
+  3.4.6 Mapの追加と削除
   　例　chap12.Sect03_4_4
+  
+第13回 Scalaプログラミングの勘所(3)
+  4.1 for文
+  　例　chap13.Sect4
   
   
