@@ -27,10 +27,13 @@ object Sect4 {
       for (nation <- nationList) yield (nation.name, nation.capital)
     println(nationCapitalPairs)//List(('日本,'東京), ('米国,'ワシントン), ('英国,'ロンドン))
     
+    //クラスNationのListであるnationListとクラスCityのListであるcityListから，
+    //「人口が1千万人を超える都市を持つ国の首都の一覧」を作成する。
     val 大都市首都一覧 = Set.empty ++
       (for (city <- cityList;if city.population > 10000000;
             nation <- nationList;if nation.name == city.countryName)
         yield nation.capital.name)
+    //このfor文の実行結果は「東京,東京,ワシントン」と東京が重複するのでSetを用いて重複を取り除いています。
     println("大都市首都一覧 = %s".format(大都市首都一覧.mkString(",")))
   }
 
