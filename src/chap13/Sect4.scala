@@ -1,22 +1,22 @@
 package chap13
 
 object Sect4 {
+  
+  val nationList = List(
+        Nation('日本, '東京), 
+        Nation('米国, 'ワシントン), 
+        Nation('英国, 'ロンドン)
+      )
+  val cityList = List(
+        City('東京, '日本, 31112000), 
+        City('阪神, '日本, 15067000), 
+        City('ニューヨーク, '米国, 27860000), 
+        City('ワシントン, '米国, 6474000), 
+        City('ロンドン, '英国, 9332000), 
+        City('マンチェスター, '英国, 3851000)
+      )
 
   def main(args: Array[String]): Unit = {
-    val nationList = List(
-          Nation('日本, '東京), 
-          Nation('米国, 'ワシントン), 
-          Nation('英国, 'ロンドン)
-        )
-
-    val cityList = List(
-          City('東京, '日本, 31112000), 
-          City('阪神, '日本, 15067000), 
-          City('ニューヨーク, '米国, 27860000), 
-          City('ワシントン, '米国, 6474000), 
-          City('ロンドン, '英国, 9332000), 
-          City('マンチェスター, '英国, 3851000)
-        )
         
     for (nation <- nationList) {
       println("名前 = %s, 首都 = %s".format(nation.name, nation.capital))
