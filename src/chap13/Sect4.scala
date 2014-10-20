@@ -34,6 +34,20 @@ object Sect4 {
             nation <- nationList;if nation.name == city.countryName)
         yield nation.capital.name)
     //このfor文の実行結果は「東京,東京,ワシントン」と東京が重複するのでSetを用いて重複を取り除いています。
+    
+    println("大都市首都一覧 = %s".format(大都市首都一覧.mkString(",")))
+    
+    method01
+  }
+  
+  /**
+   * なお，for文が内部的に行っている処理を明示的に書くと以下のようになります。
+   */
+  def method01 = {
+    val 大都市首都一覧 = Set.empty ++
+      cityList.filter(_.population > 10000000)
+      .flatMap(city => nationList.filter(city.countryName == _.name).map(_.capital.name))
+      
     println("大都市首都一覧 = %s".format(大都市首都一覧.mkString(",")))
   }
 
