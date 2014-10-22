@@ -38,6 +38,11 @@ object Sect4 {
     println("大都市首都一覧 = %s".format(大都市首都一覧.mkString(",")))
     
     method01
+    
+    val p = new Person("xxx")
+    println(p.name)
+    p.name_=("aaa")
+    println(p.name)
   }
   
   /**

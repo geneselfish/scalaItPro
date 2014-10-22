@@ -36,6 +36,10 @@ http://itpro.nikkeibp.co.jp/article/COLUMN/20080613/308019/?ST=develop
   
 第13回 Scalaプログラミングの勘所(3)
   4.1 for文
+    for yield文によるコレクションの生成。if
   　例　chap13.Sect4
   
-  
+第14回 関数脳のつくり方　Second Season　～モナドで悟りをひらく～
+　5 モナドの例　Maybeモナド
+　　例　chap14.Main01
+  7 モナドの例　Listモナド
