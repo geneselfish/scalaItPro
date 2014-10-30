@@ -45,3 +45,5 @@ http://itpro.nikkeibp.co.jp/article/COLUMN/20080613/308019/?ST=develop
   7 モナドの例　Listモナド
 　　例　chap14.Main02
   
+第19回 アクターで楽々並行プログラミング(1)
+  
