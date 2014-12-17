@@ -6,7 +6,7 @@ import chap09.app.施設利用申請書
 import chap09.app.施設区分._
 import chap09.app.設備区分._
 
-case class App20090505 extends 施設利用申請書 {
+case class App20090505() extends 施設利用申請書 {
   //implicit conversionにより自動的に整数値から文字列に変換されてインスタンス変数「会員番号」に格納される
   会員番号 = 123456
   名前 = "Scala太郎"
@@ -22,5 +22,5 @@ case class App20090505 extends 施設利用申請書 {
       設備(ホワイトボード) 個数は 2 理由は "会議室ごとに利用"
     } 理由は """両方同時に利用希望します。片方だけだと入りきらないので。"""
   }
-  
+
 }
